@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActorCell" id="T4i-Ba-lGI" customClass="ActorCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="337"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="226" height="337"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actor" translatesAutoresizingMaskIntoConstraints="NO" id="43u-ZJ-8rD">
+                        <rect key="frame" x="0.0" y="16" width="226" height="254"/>
+                    </imageView>
+                    <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tg0-DR-VFM">
+                        <rect key="frame" x="0.0" y="286" width="226" height="51"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Robinson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGF-oY-SMs">
+                        <rect key="frame" x="5" y="286" width="216" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Rb5-tG-noG"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aGF-oY-SMs" secondAttribute="bottom" id="0Jt-Kv-xkt"/>
+                <constraint firstAttribute="trailing" secondItem="43u-ZJ-8rD" secondAttribute="trailing" id="4El-wg-0Un"/>
+                <constraint firstItem="aGF-oY-SMs" firstAttribute="top" secondItem="tg0-DR-VFM" secondAttribute="top" id="7ey-9y-xVJ"/>
+                <constraint firstItem="aGF-oY-SMs" firstAttribute="top" secondItem="43u-ZJ-8rD" secondAttribute="bottom" constant="16" id="8cg-zg-jkr"/>
+                <constraint firstAttribute="trailing" secondItem="tg0-DR-VFM" secondAttribute="trailing" id="Mzb-0E-z0D"/>
+                <constraint firstItem="tg0-DR-VFM" firstAttribute="height" secondItem="43u-ZJ-8rD" secondAttribute="height" multiplier="1/5" id="TGR-ec-FAX"/>
+                <constraint firstItem="43u-ZJ-8rD" firstAttribute="top" secondItem="T4i-Ba-lGI" secondAttribute="top" constant="16" id="Wg6-bo-62X"/>
+                <constraint firstItem="tg0-DR-VFM" firstAttribute="leading" secondItem="T4i-Ba-lGI" secondAttribute="leading" id="gyM-55-yYI"/>
+                <constraint firstItem="aGF-oY-SMs" firstAttribute="leading" secondItem="T4i-Ba-lGI" secondAttribute="leading" constant="5" id="kGW-WN-0bf"/>
+                <constraint firstItem="43u-ZJ-8rD" firstAttribute="leading" secondItem="T4i-Ba-lGI" secondAttribute="leading" id="vZG-4Z-VBI"/>
+                <constraint firstAttribute="trailing" secondItem="aGF-oY-SMs" secondAttribute="trailing" constant="5" id="w7o-pM-v07"/>
+                <constraint firstAttribute="bottom" secondItem="tg0-DR-VFM" secondAttribute="bottom" id="yan-f0-Nwa"/>
+            </constraints>
+            <size key="customSize" width="226" height="337"/>
+            <connections>
+                <outlet property="nameLabel" destination="aGF-oY-SMs" id="4it-0X-UnI"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="197.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="actor" width="128" height="128"/>
+    </resources>
+</document>
